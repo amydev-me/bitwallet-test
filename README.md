@@ -1,5 +1,14 @@
 
 ## Common Setup
+
+Clone
+```bash
+git clone https://github.com/amydev-me/bitwallet-test.git
+```
+```bash
+cd bitwallet-test
+```
+
 ```bash
 npm install
 ```
