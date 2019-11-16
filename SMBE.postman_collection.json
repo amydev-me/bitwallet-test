@@ -1,0 +1,962 @@
+{
+	"info": {
+		"_postman_id": "567b3302-9c37-4537-a22f-af53a27dce45",
+		"name": "SMBE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Reason Code",
+			"item": [
+				{
+					"name": "Get Reason Code",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer JKmfiee4cwROTaTkHQmYLlGehlHaypLADZf3Gmt0WrEcB6dyxQHspMLtxX6c",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/reasoncode",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"reasoncode"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Reason Code Ext",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer JKmfiee4cwROTaTkHQmYLlGehlHaypLADZf3Gmt0WrEcB6dyxQHspMLtxX6c",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/reasoncode-ext",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"reasoncode-ext"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Reason Code",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer JKmfiee4cwROTaTkHQmYLlGehlHaypLADZf3Gmt0WrEcB6dyxQHspMLtxX6c",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\n\t\"description\":\"Helloworld\",\n\t\"chkex\":true,\n\t\"chkrev\":false\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/reasoncode",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"reasoncode"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Reason Code",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\":1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/reasoncode",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"reasoncode"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Reason Code",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/reasoncode/search/H",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"reasoncode",
+								"search",
+								"H"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Designer Engineer Request",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "companyid",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/der_request",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"der_request"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Approved",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/der_request",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"der_request"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Rejected",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/der_rejected_request",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"der_rejected_request"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Participants",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"company_id\":1,\n\t\"reason_id\":1,\n\t\"designer_id\":1,\n\t\"pm_no\":\"PM12313\",\n\t\"pj_no\":\"PJ12313\",\n\t\"location\":\"Singapore\",\n\t\"required_date_from\":\"04-11-2019\",\n\t\"required_date_to\":\"30-11-2019\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/create-eng-designer-request",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"create-eng-designer-request"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Desingers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/get-designers",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"get-designers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Drafters",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/get-drafters",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"get-drafters"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get PM No",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "companyid",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/get-pm-no",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"get-pm-no"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Project Type",
+			"item": [
+				{
+					"name": "Get Projects",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/master/ProjectType",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"master",
+								"ProjectType"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Projects Copy",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"val\":\"12/02/21 2:28:09\"\t\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/com-test",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"com-test"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Project",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "companyid",
+								"value": "1",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\n\t\"description\":\"1\",\n\t\"customer\":1,\n\t\"project_status\":1,\n\t\"project_lost_to\":\"PM Status\",\n\t\"industry_type\":\"PM Status\",\n\t\"owner\":\"PM Status\",\n\t\"consultant\":\"PM Status\",\n\t\"contractor\":\"PM Status\",\n\t\"product_type\":\"PM Status\",\n\t\"in_date\":\"PM Status\",\n\t\"handles_by\":\"\",\n\t\"sales_person\":\"\",\n\t\"closing_date\":\"\",\n\t\"commercial_sales_person\":\"\",\n\t\"tender_ref_no\":\"\",\n\t\"contact_number\":\"\",\n\t\"lost_to_reason\":\"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/estimation/ProjectMaster",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"estimation",
+								"ProjectMaster"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Engineering Request",
+			"item": [
+				{
+					"name": "Get Dwg",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/get-dwg",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"get-dwg"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get PM NO",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"code\":\"123213\",\n\t\"request_type\":\"NEW\",\n\t\"company_id\":1,\n\t\"pm_no\":\"sdfs\",\n\t\"estimation_no\":\"3343kd\",\n\t\"pj_no\":\"PJ123456\",\n\t\"required_date\":\"10-11-2019\",\n\t\"created_date\":\"05-11-2019\",\n\t\"created_by\":1,\n\t\"designer_id\":2,\n\t\"review_by\":3,\n\t\"request_status\":0,\n\t\"inprogress_status\":0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/create-dwg",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"create-dwg"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Enquiry Documents",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/engineering/enquiry-documents/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"engineering",
+								"enquiry-documents",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Project Documents",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/engineering/project-documents/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"engineering",
+								"project-documents",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Seq",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/engineering/get-sequences/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"engineering",
+								"get-sequences",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Drafter Assigns",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/engineering/all-drafter-assigns/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"engineering",
+								"all-drafter-assigns",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Enquires",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/engineering/get-enquires/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"engineering",
+								"get-enquires",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Designer Request",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "companyid",
+								"value": "1",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "1",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/engineering/get-reviewing?companyid=1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"engineering",
+								"get-reviewing"
+							],
+							"query": [
+								{
+									"key": "companyid",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Store Time Log",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"request_id\":1,\n\t\"process_type\":\"START\"\n\t\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/engineering/store-time-log",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"engineering",
+								"store-time-log"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Drafter Assign",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "companyid",
+								"value": "1",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/engineering/get-drafter-assigns?companyid=1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"engineering",
+								"get-drafter-assigns"
+							],
+							"query": [
+								{
+									"key": "companyid",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Leader WIP",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "companyid",
+								"value": "1",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/engineering/leader-work-in-progress?companyid=1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"engineering",
+								"leader-work-in-progress"
+							],
+							"query": [
+								{
+									"key": "companyid",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e0846772-e5c3-48f3-b3a2-489f3c4df046",
+						"exec": [
+							"pm.test('status code is 200', function(){",
+							"    var jsonData= JSON.parse(responseBody);",
+							"    postman.setEnvironmentVariable(\"token\",jsonData.token)",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"amy@smbe.fujielectric.com\",\n\t\"password\":\"password\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/loginUser",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"loginUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send Message",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e0846772-e5c3-48f3-b3a2-489f3c4df046",
+						"exec": [
+							"pm.test('status code is 200', function(){",
+							"    var jsonData= JSON.parse(responseBody);",
+							"    postman.setEnvironmentVariable(\"token\",jsonData.token)",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"message\":\"Hello! How are you?\",\n\t\"chat_room_id\":2,\n\t\"sender_id\":2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/send_message",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"send_message"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\n\t\"First_Name\":\"Inititator\",\n\t\"Last_Name\":\"1\",\n\t\"User_Name\":\"inititator_1\",\n\t\"Password\":\"password\",\n\t\"Confirm_Password\":\"password\",\n\t\"Employee_No\":\"12346\",\n\t\"Company\":\"SMBE Fuji\",\n\t\"Department\":\"Initiator\",\n\t\"Title\":\"Initiator\",\n\t\"Team\":\"Nexus\",\n\t\"Email\":\"initiator_1@smbe.fujielectric.com\",\n\t\"User_status\":\"Nice\",\n\t\"Mobile\":\"+65 625234525\",\n\t\"Ext\":\"0\",\n\t\"Employment_Date\":\"31-10-2019\",\n\t\"Tax_Code_Edit_Auth\":0,\n\t\"Est_Edit_Auth\":0,\n\t\"Allow_View_Min_Sell_Price_Est\":0,\n\t\"Costing_Auth\":0,\n\t\"No_Access\":0,\n\t\"Alow_Viewing_Only\":0,\n\t\"Alow__BOth\":1\n\t\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/user",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Sequences",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "companyid",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "userid",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\n\t\"estimation_id\":1,\n\t\"seq\":2,\n\t\"board_name\":\"Board Name\",\n\t\"class\":\"Board Class\",\n\t\"qty\":1,\n\t\"unit_price\":\"pcs\",\n\t\"unit_cost\":\"100000\",\n\t\"currency\":\"SGD\",\n\t\"status\":0,\n\t\"created_by\":1,\n\t\"description\":\"ABCDEFG\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/estimation/EstimationBoardes",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"estimation",
+						"EstimationBoardes"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "9f214183-761d-447e-9064-21f007141057",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "4fb975cf-e521-4e84-82e0-60b8661e8627",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
